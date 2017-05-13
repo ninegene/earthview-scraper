@@ -1,23 +1,21 @@
 # earthview-scraper
 Download wallpaper images from https://earthview.withgoogle.com
 
+```
+$ python scrape.py
+```
+
 When `scrape.py` doesn't work anymore.
 Another way to download with wget as mirror offline site:
 ```
 $ wget -mkEpnp earthview.withgoogle.com
 
-# Press control key and Z key to suspense to background
-$ Ctrl+Z
+FINISHED --2017-05-12 23:33:28--
+Total wall clock time: 49m 34s
+Downloaded: 3054 files, 1.0G in 7m 55s (2.19 MB/s)
+```
 
-# Watch downladed count and press control key and C key to stop watching when number stop increasing after a while
+Open another terminal window to watch downloaded image count:
+```
 $ watch -n 2 'ls -l earthview.withgoogle.com/download | wc -l'
-716
-
-$ Ctrl+C
-
-# Bring it to foreground
-$ fg
-
-# Press control key and C key to stop wget download
-$ Ctrl+C
 ```
